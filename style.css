@@ -1,0 +1,51 @@
+body {
+  margin: 4em;
+  height: 200px;
+}
+.css-tooltip {
+  width: 100%;
+  height: 16px;
+  position: relative;
+  display: block;
+}
+.tp-icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #0073e6;
+  background-color: #eee;
+  color: #0073e6;
+  border-radius: 50%;
+  text-align: center;
+  padding: 2px;
+  font-size: 16px;
+  line-height: 1;
+  font-style: normal;
+  cursor: help;
+}
+
+.css-tooltip .tooltiptext {
+  border-radius: 4px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.24);
+  background-color: #2a3138;
+  color: #eef1ff;
+  font-size: 14px;
+  line-height: 18px;
+  z-index: 4;
+  width: 330px;
+  padding: 8px;
+  bottom: 140%;
+  left: auto;
+  right: -14px;
+  visibility: hidden;
+}
+
+.tooltiptext.active {
+  visibility: visible;
+}
+
+@media only screen and (min-width: 768px) {
+  .css-tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+}
